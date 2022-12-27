@@ -1,6 +1,21 @@
 //buttons
 let myLibrary = [];
-let addBook = document.querySelector('.addBook');
+const addBook = document.querySelector(".addBook");
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay")
+const closeModalBtn = document.querySelector(".btn-close");
+
+//open modal
+const openModal = function() {
+    modal.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+};
+
+//close modal
+const closeModal = function() {
+    modal.classList.add("hidden");
+    overlay.classList.add("hidden");
+}
 
 //object and constructor
 function Book(title, author, pages, read) {
@@ -14,11 +29,12 @@ function addBookToLibrary() {
     //do stuff here
 }
 
-function modal() {
-    //working with modals or popup button
-}
-
 //eventlisteners
-addBook.addEventListener('click', function(){
-    document.querySelector();
-})
+addBook.addEventListener("click", openModal);
+closeModalBtn.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeModal);
+document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+        modalClose();
+    }
+});
