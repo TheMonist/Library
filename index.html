@@ -14,29 +14,29 @@
         <main class="library-body">
             <section class="modal hidden">
                 <div class="flex">
-                    <button class="btn btn-close">x</button>
+                    <button class="btn btn-close">⨉</button>
                 </div>
                 <div>
                     <!--Make form for books-->
                     <form action="">
                         <fieldset>
-                            <legend>ADD BOOK</legend>
+                            <h3>ADD BOOK</h3>
                             <div>
-                                <input type="text" name="title" id="title" placeholder="Title">
+                                <input type="text" name="title" id="title" placeholder="Title" required>
                             </div>
                             <div>
-                                <input type="text" name="author" id="author" placeholder="Author">
+                                <input type="text" name="author" id="author" placeholder="Author" required>
                             </div>
                             <div>
-                                <input type="number" name="pages" id="pages" placeholder="# of pages">
+                                <input type="number" name="pages" id="pages" placeholder="# of pages" required>
                             </div>
-                            <button type="submit" class="btn">ADD BOOK</button>
+                            <button type="submit" class="btn addLibrary">ADD BOOK</button>
                         </fieldset>
                     </form>
                 </div>
             </section>
             <div class="overlay hidden"></div>
-            <!--Insert Table Here-->
+            <!--Insert Table/Cards Here-->
             <button type="submit" class="btn addBook">NEW BOOK</button>
         </main>
         <footer class="library-foot">
