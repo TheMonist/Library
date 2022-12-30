@@ -13,7 +13,7 @@ html, body {
     position: relative;
     min-height: 100vh;
 }
-.library-head {
+.libraryHead {
     background-color: purple;
     color: white;
     width: 100vw;
@@ -24,7 +24,7 @@ html, body {
     justify-content: center;
 }
 
-.library-body {
+.libraryBody {
     width: 90vw;
     height: 80vh;
     display: flex;
@@ -33,7 +33,7 @@ html, body {
     justify-content: center;
 }
 
-.library-foot {
+.libraryFoot {
     background-color: purple;
     color: white;
     width: 100vw;
@@ -95,7 +95,7 @@ button {
     font-size: 1em;
 }
 
-.btn-close {
+.btnClose {
     transform: translate(10px, -20px);
     padding: 0.5rem 0.7rem;
     background: #eee;
@@ -121,4 +121,29 @@ button {
 
 .hidden {
     display: none;
+}
+
+.container, .bookContainer {
+    border-style: groove;
+    display: grid;
+    grid-template-columns: 1fr, 2fr;
+    grid-template-rows: .1fr;
+    text-align: center;
+    min-height: 65vh;
+    min-width: 90vw;
+}
+
+.cardBody {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px 1fr));
+    gap: 15px;
+    grid-column: 2 / 3;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px; 
+    border: 2px solid black;
+    border-radius: 15px;
+    /*height: 150px;*/
+    /*width: 25%;*/
+    box-shadow: 5px 5px 5px gray;
 }

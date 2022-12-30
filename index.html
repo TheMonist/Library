@@ -8,17 +8,17 @@
         <title>Odin Library</title>
     </head>
     <body>
-        <header class="library-head">
+        <header class="libraryHead">
             <h4>Odin Library</h4>
         </header>
-        <main class="library-body">
+        <main class="libraryBody">
             <section class="modal hidden">
                 <div class="flex">
-                    <button class="btn btn-close">⨉</button>
+                    <button class="btn btnClose">⨉</button>
                 </div>
                 <div>
                     <!--Make form for books-->
-                    <form action="">
+                    <form action="" id="bookForm">
                         <fieldset>
                             <h3>ADD BOOK</h3>
                             <div>
@@ -30,6 +30,10 @@
                             <div>
                                 <input type="number" name="pages" id="pages" placeholder="# of pages" required>
                             </div>
+                            <select name="read" id="read">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
                             <button type="submit" class="btn addLibrary">ADD BOOK</button>
                         </fieldset>
                     </form>
@@ -37,9 +41,13 @@
             </section>
             <div class="overlay hidden"></div>
             <!--Insert Table/Cards Here-->
-            <button type="submit" class="btn addBook">NEW BOOK</button>
+            <section class="container">
+                <h1>Books In Library</h1>
+                <div class="bookContainer"></div>
+                <button type="submit" class="btn addBook">NEW BOOK</button>
+            </section>
         </main>
-        <footer class="library-foot">
+        <footer class="libraryFoot">
             <h4>Created By Roger Rosena</h4>
         </footer>
     </body>
