@@ -100,6 +100,8 @@ button {
     padding: 0.5rem 0.7rem;
     background: #eee;
     border-radius: 50%;
+    margin-left: 365px;
+    color: black;
 }
 
 .overlay {
@@ -124,8 +126,9 @@ button {
 }
 
 .container, .bookContainer {
-    border-style: groove;
     display: grid;
+    /*justify-content: center;*/
+    /*align-items: center;*/
     grid-template-columns: 1fr, 2fr;
     grid-template-rows: .1fr;
     text-align: center;
@@ -146,4 +149,11 @@ button {
     /*height: 150px;*/
     /*width: 25%;*/
     box-shadow: 5px 5px 5px gray;
+}
+
+#bookForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }

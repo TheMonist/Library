@@ -19,31 +19,31 @@
                 <div>
                     <!--Make form for books-->
                     <form action="" id="bookForm">
-                        <fieldset>
-                            <h3>ADD BOOK</h3>
-                            <div>
-                                <input type="text" name="title" id="title" placeholder="Title" required>
-                            </div>
-                            <div>
-                                <input type="text" name="author" id="author" placeholder="Author" required>
-                            </div>
-                            <div>
-                                <input type="number" name="pages" id="pages" placeholder="# of pages" required>
-                            </div>
-                            <select name="read" id="read">
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                            </select>
-                            <button type="submit" class="btn addLibrary">ADD BOOK</button>
-                        </fieldset>
+                        <h3>ADD BOOK</h3>
+                        <div>
+                            <input type="text" name="title" id="title" placeholder="Title" required>
+                        </div>
+                        <div>
+                            <input type="text" name="author" id="author" placeholder="Author" required>
+                        </div>
+                        <div>
+                            <input type="number" name="pages" id="pages" placeholder="# of pages" required>
+                        </div>
+                        <select name="read" id="read">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                        <button type="submit" class="btn submitBtn">ADD BOOK</button>
                     </form>
                 </div>
+                <div class="overlay hidden"></div>
             </section>
-            <div class="overlay hidden"></div>
             <!--Insert Table/Cards Here-->
             <section class="container">
                 <h1>Books In Library</h1>
-                <div class="bookContainer"></div>
+                <div class="bookContainer">
+                    <div class="books"></div>
+                </div>
                 <button type="submit" class="btn addBook">NEW BOOK</button>
             </section>
         </main>
