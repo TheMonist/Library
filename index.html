@@ -8,48 +8,38 @@
         <title>Odin Library</title>
     </head>
     <body>
-        <header class="libraryHead">
-            <h4>Odin Library</h4>
-        </header>
-        <main class="libraryBody">
-            <section class="modal hidden">
-                <div class="flex">
-                    <button class="btn btnClose">⨉</button>
-                </div>
-                <div>
-                    <!--Make form for books-->
-                    <form action="" id="bookForm">
-                        <h3>ADD BOOK</h3>
-                        <div>
-                            <input type="text" name="title" id="title" placeholder="Title" required>
-                        </div>
-                        <div>
-                            <input type="text" name="author" id="author" placeholder="Author" required>
-                        </div>
-                        <div>
-                            <input type="number" name="pages" id="pages" placeholder="# of pages" required>
-                        </div>
-                        <select name="read" id="read">
-                            <option value="yes">Yes</option>
-                            <option value="no">No</option>
-                        </select>
-                        <button type="submit" class="btn submitBtn">ADD BOOK</button>
-                    </form>
-                </div>
-                <div class="overlay hidden"></div>
-            </section>
-            <!--Insert Table/Cards Here-->
-            <section class="container">
-                <h1>Books In Library</h1>
-                <div class="bookContainer">
-                    <div class="books"></div>
-                </div>
-                <button type="submit" class="btn addBook">NEW BOOK</button>
-            </section>
-        </main>
-        <footer class="libraryFoot">
-            <h4>Created By Roger Rosena</h4>
-        </footer>
-    </body>
+        <div class="container">
+          <div class="form-heading">
+            <h1>Add New Book To Library</h1>
+          </div>
+          <div class="books-heading">
+            <h1>Current Books In Library</h1>
+          </div>
+          <div class="form">
+            <button class="add-book-button">Add New Book</button>
+            <div id="add-book-form" style="display: none">
+              <form id="add-book">
+                <label for="Title">Title:</label>
+                <input type="text" id="Title" name="Title" required />
+                <label for="Author">Author:</label>
+                <input type="text" id="Author" name="Author" required />
+                <label for="Pages">Pages:</label>
+                <input type="number" id="Pages" name="Pages" required />
+                <label for="Read">Read:</label>
+                <select id="Read" , name="Read">
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+                <button type="submit" class="submit-button">
+                  Submit To Library
+                </button>
+                <button type="reset" class="reset-button">Reset Form</button>
+              </form>
+            </div>
+          </div>
+          <div class="books"></div>
+        </div>
+      </body>
     <script src="script.js"></script>
 </html>
+<!--For later use freecodecamp or bootstrap for modals and refactoring-->
